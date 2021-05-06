@@ -1,0 +1,73 @@
+.container {
+    padding: 15px;
+
+    .avatar {
+        width: 100px;
+        margin: 10px 0px;
+    }
+
+    .resume_ref {
+        color: white;
+        background-color: rgb(26, 115, 232);
+        border: 1px solid transparent;
+        border-radius: 4px;
+        font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        height: 21px;
+        line-height: 21px;
+        margin: 0px 10px 0px 0px;
+        padding: 2px 5px 2px 4px;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .chip_container {
+        margin: 15px 0;
+        .chip {
+            margin-right: 10px;
+            display: inline-block;
+            padding: 0 25px;
+            height: 30px;
+            font-size: 16px;
+            line-height: 30px;
+            border-radius: 25px;
+            background-color: #f1f1f1;
+
+            &:hover {
+                cursor: pointer;
+                color: #444444;
+            }
+        }
+    }
+
+    .contact_me {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        margin-top: 10px;
+
+        a {
+            &:hover {
+                cursor: pointer;
+                color: #444444;
+            }
+        }
+    }
+
+    .projects {
+        margin: auto;
+        margin-top: 12%;
+    }
+
+    .experience {
+        margin: auto;
+        margin-top: 5%;
+    }
+    .black {
+        color: #444444;
+    }
+}

@@ -1,0 +1,36 @@
+<div class="container">
+    <div>
+        <img src="{{experienceService?.AboutMeInfo?.avatar}}" alt="Avatar" class="avatar">
+        <div>
+            <h2 class="black">Welcome to my Portfolio 👋</h2>
+            <p>
+                {{experienceService?.AboutMeInfo?.info}}
+                <a target="_blank" class="resume_ref" href="{{experienceService?.AboutMeInfo?.resume}}">.docx</a>
+            </p>
+
+            <h4 class="black">My knowledge: 🧠</h4>
+            <div class="chip_container">
+                <div class="chip" *ngFor="let knowledge of this.experienceService?.AboutMeInfo?.knowledge">{{knowledge}}</div>
+            </div>
+            <p class="contact_me">
+                <a (click)="scrollToForm()">
+                    Contact Me
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <div class="projects row">
+        <project-card *ngFor="let project of projects" class="col" [project]="project"></project-card>
+    </div>
+
+    <div class="experience">
+        <h4 class="black">
+            Experience
+        </h4>
+        <div class="row mt-4">
+            <experience-card *ngFor="let experience of experiences" [experience]="experience" class="col">
+            </experience-card>
+        </div>
+    </div>
+</div>

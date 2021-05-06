@@ -1,0 +1,46 @@
+<div class="container">
+    <div>
+        <a routerLink="/home">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i> Back to home
+        </a>
+        <div>
+            <img src="{{experienceService?.AboutMeInfo?.avatar}}" alt="Avatar" class="project_icon">
+            <div>
+                <h2 class="black">
+                    Welcome to '{{project?.name}}'
+                </h2>
+                <p>
+                    {{project?.description}}
+                </p>
+            </div>
+        </div>
+        <div class="project_infos row">
+            <div class="project_team col" *ngIf="project?.teams">
+                <div class="item">
+                    <div class="header black">Team</div>
+                    <div *ngFor="let team of project?.teams">
+                        {{team?.name}} - {{team?.position}}
+                    </div>
+                </div>
+            </div>
+            <div class="my_role col" *ngIf="project?.role">
+                <div class="item">
+                    <div class="header black">My Role</div>
+                    <div>{{project?.role}}</div>
+                </div>
+            </div>
+            <div class="goals col" *ngIf="project?.goal">
+                <div class="item">
+                    <div class="header black">Goals</div>
+                    <div>{{project?.goal}}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project_images">
+            <div *ngFor="let image of project?.images">
+                <img src="{{image.url}}" alt="">
+            </div>
+        </div>
+    </div>
+</div>

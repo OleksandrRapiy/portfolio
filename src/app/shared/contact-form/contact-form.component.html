@@ -1,0 +1,30 @@
+<div class="contact" #contact>
+    <div class="header">
+        <h4>Looking for .NET Developer</h4>
+        <h6>Send me details</h6>
+    </div>
+    <div class="spinner" *ngIf="!showForm">
+        <div class="spinner-grow" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <form (submit)="onSubmit($event)" [formGroup]="contactForm" *ngIf="showForm">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="user_name" formControlName="name" class="form-control" id="name"
+                placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" name="user_email" class="form-control" id="email" formControlName="email"
+                aria-describedby="Email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="description">Message</label>
+            <textarea class="form-control" formControlName="message" name="message" id="description"
+                rows="3"></textarea>
+        </div>
+        <button type="submit" class="float-right" [disabled]="contactForm.invalid"> <span>Submit</span> </button>
+    </form>
+</div>

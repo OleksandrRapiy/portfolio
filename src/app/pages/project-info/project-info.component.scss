@@ -1,0 +1,38 @@
+.container {
+    padding: 15px;
+
+    a {
+        font-size: 16px;
+        margin-top: 5%;
+    }
+
+    .project_icon {
+        width: 100px;
+        margin: 10px 0px;
+    }
+
+    .project_infos {
+        margin-top: 10%;
+
+
+        .item { 
+            width: 264px;
+            margin-top: 5px;
+        }
+    }
+
+    .project_images {
+        text-align: center;
+        margin-top: 5%;
+
+        img { 
+            max-width: 800px;
+            width: 100%;
+            margin: 20px 0px;
+        }
+    }
+
+    .black {
+        color: #444444;
+    }
+}

@@ -1,0 +1,20 @@
+.card {
+    max-width: 264px;
+    width: 100%;
+    border: none;
+    margin: auto;
+    &:hover {
+        cursor: pointer;
+    }
+
+    h4 {
+        font-weight: 500;
+        font-size: 18px;
+        color: #444444;
+    }
+    .description {
+        font-size: 16px;
+        line-height: 26px;
+        padding: 15px 0px;
+    }
+}
