@@ -1,8 +1,8 @@
-<div class="card">
-    <img *ngIf="project?.images" src="{{project?.images[0]?.url}}" alt="">
+<div class="card" routerLink="/project/{{project?.id}}">
+    <img *ngIf="project?.thumbnail" src="{{project?.thumbnail}}" alt="">
     <div class="description">
         <h4> {{ project?.name }} </h4>
-        <p>
+        <p class="text">
             {{ project?.description }}
         </p>
         <p class="more">

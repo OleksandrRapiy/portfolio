@@ -8,9 +8,10 @@
                 <a target="_blank" class="resume_ref" href="{{experienceService?.AboutMeInfo?.resume}}">.docx</a>
             </p>
 
-            <h4 class="black">My knowledge: 🧠</h4>
+            <h4 class="black">My knowledge: <i class="fas fa-laptop-code" id="laptop"></i></h4>
             <div class="chip_container">
-                <div class="chip" *ngFor="let knowledge of this.experienceService?.AboutMeInfo?.knowledge">{{knowledge}}</div>
+                <div class="chip" *ngFor="let knowledge of this.experienceService?.AboutMeInfo?.knowledge">{{knowledge}}
+                </div>
             </div>
             <p class="contact_me">
                 <a (click)="scrollToForm()">

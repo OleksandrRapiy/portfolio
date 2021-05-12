@@ -7,6 +7,7 @@ export class Project {
     description: string;
     role: string;
     goal: string;
+    thumbnail: string;
     teams: Team[] = [];
     images: Image[] = [];
 }

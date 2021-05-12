@@ -25,14 +25,9 @@ export class ProjectInfoComponent implements OnInit {
     const id = this.activateRoute.snapshot.params['id'];
 
 
-    this.projectService.getProjectById(id).subscribe(project => { 
+    this.projectService.getProjectById(id).subscribe(project => {
       this.project = project;
     })
-
-    // this.projectService.getProjectImages(id).subscribe(x => {
-    //   console.log(x);
-
-    // })
   }
 
 }
